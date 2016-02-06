@@ -4,14 +4,14 @@ import UIKit
 for i in 0...100{
     
     if i%5 == 0 {
-        print("\(i) BINGO!!")
+        print("\(i)\tBINGO!!")
     }
     if i%2 == 0{
-        print("\(i) PAR!!")
+        print("\(i)\tPAR!!")
     }else{
-        print("\(i) IMPAR!!")
+        print("\(i)\tIMPAR!!")
     }
     if i>=30 && i<=40{
-        print("\(i) Viva Swift!!")
+        print("\(i)\tViva Swift!!")
     }
 }
