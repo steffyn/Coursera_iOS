@@ -19,26 +19,22 @@ class Auto {
     
     func cambioDeVelocidad () ->(actual : Int, velocidadEnCadena : String){
         var velocidadEnCadena : String = ""
-        var actual : Int = 0
+        var actual :Int = velocidad.rawValue
         switch velocidad{
             case .Apagado:
-                actual = velocidad.rawValue //Toma el valor actual
                 velocidadEnCadena = "Apagado" //Velocidad Actual
-                velocidad = Velocidades.VelocidadBaja //Cambia a la velocidad siguiente
+                velocidad = .VelocidadBaja //Cambia a la velocidad siguiente
             break
             case .VelocidadBaja:
-                actual = velocidad.rawValue
                 velocidadEnCadena = "Velocidad Baja"
-                velocidad = Velocidades.VelocidadMedia
+                velocidad = .VelocidadMedia
             break
             case .VelocidadMedia:
-                actual = velocidad.rawValue
                 velocidadEnCadena = "Velocidad Media"
-                velocidad = Velocidades.VelocidadAlta
+                velocidad = .VelocidadAlta
             default: //Si no es ninguna de las anteriores es velocidad alta
-                actual = velocidad.rawValue
                 velocidadEnCadena = "Velocidad Alta"
-                velocidad = Velocidades.VelocidadMedia
+                velocidad = .VelocidadMedia
             break
         }
         return (actual, velocidadEnCadena)
