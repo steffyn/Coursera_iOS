@@ -20,6 +20,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var EtiquetaHamburguesa: UILabel!
+    @IBOutlet weak var EtiquetaPais: UILabel!
+    
+    let hamburguesas = ColeccionDeHamburguesa()
+    let paises = ColeccionDePaises()
+    let colores = Colores()
 
+    @IBAction func BotonHamburguesa() {
+        EtiquetaHamburguesa.text = hamburguesas.obtenHamburguesa()
+        EtiquetaPais.text = paises.obtenPais()
+        view.backgroundColor = colores.RegresaColorAleatorio()
+    }
 }
 
