@@ -14,6 +14,7 @@
 		1D8132541C8294A800FFEEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8132521C8294A800FFEEBB /* LaunchScreen.storyboard */; };
 		1D81325F1C8294A800FFEEBB /* MasFelizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D81325E1C8294A800FFEEBB /* MasFelizTests.swift */; };
 		1D81326A1C8294A800FFEEBB /* MasFelizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8132691C8294A800FFEEBB /* MasFelizUITests.swift */; };
+		1D81327E1C82A3E400FFEEBB /* ColoresStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D81327D1C82A3E400FFEEBB /* ColoresStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		1D8132651C8294A800FFEEBB /* MasFelizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasFelizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8132691C8294A800FFEEBB /* MasFelizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasFelizUITests.swift; sourceTree = "<group>"; };
 		1D81326B1C8294A800FFEEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8132781C82A09700FFEEBB /* pruebas.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = pruebas.playground; sourceTree = "<group>"; };
+		1D81327D1C82A3E400FFEEBB /* ColoresStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoresStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		1D8132481C8294A700FFEEBB /* MasFeliz */ = {
 			isa = PBXGroup;
 			children = (
+				1D8132771C82A08700FFEEBB /* playgrounds */,
 				1D8132491C8294A700FFEEBB /* AppDelegate.swift */,
 				1D81324B1C8294A700FFEEBB /* ViewController.swift */,
 				1D81324D1C8294A800FFEEBB /* Main.storyboard */,
@@ -123,6 +127,15 @@
 				1D81326B1C8294A800FFEEBB /* Info.plist */,
 			);
 			path = MasFelizUITests;
+			sourceTree = "<group>";
+		};
+		1D8132771C82A08700FFEEBB /* playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				1D8132781C82A09700FFEEBB /* pruebas.playground */,
+				1D81327D1C82A3E400FFEEBB /* ColoresStruct.swift */,
+			);
+			name = playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D81324C1C8294A700FFEEBB /* ViewController.swift in Sources */,
+				1D81327E1C82A3E400FFEEBB /* ColoresStruct.swift in Sources */,
 				1D81324A1C8294A700FFEEBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,6 +20,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var mensajePositivo: UILabel!
+    let colores = Colores()
+    let frases = Datos()
+    
 
+    @IBAction func dameUnMesaje() {
+        mensajePositivo.text = frases.RegresaColorAleatorio()
+        let colorAleatorio = colores.RegresaColorAleatorio()
+        view.backgroundColor = colorAleatorio
+        //view.tintColor = colorAleatorio
+    }
+    
+    
 }
 
